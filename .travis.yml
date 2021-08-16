@@ -1,0 +1,15 @@
+sudo: required
+services: 
+  - docker
+
+before_install:
+  - docker build -t charlytron/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI=true charlytron/react-test npm test
+
+after_success:
+  - docker build -t charlytron/multi-client ./client
+  - docker build -t charlytron/multi-nginx ./nginx
+  - docker build -t charlytron/multi-server ./server
+  - docker build -t charlytron/multi-worker ./worker
