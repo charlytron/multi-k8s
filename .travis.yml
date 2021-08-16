@@ -13,3 +13,10 @@ after_success:
   - docker build -t charlytron/multi-nginx ./nginx
   - docker build -t charlytron/multi-server ./server
   - docker build -t charlytron/multi-worker ./worker
+  # Log into docker CLI
+  - echo "$DOCKER_PASSWORD" | docker login -u "DOCKER_ID" --password-stdin
+  # Take those images and push them to Docker Hub
+  - docker push charlytron/multi-client
+  - docker push charlytron/multi-nginx
+  - docker push charlytron/multi-server
+  - docker push charlytron/multi-worker
