@@ -1,0 +1,10 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "client",
+      "image": "charlytron/multi-client",
+      "hostname": "client"
+    }
+  ]
+}
