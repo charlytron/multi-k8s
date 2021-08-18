@@ -21,8 +21,6 @@ after_success:
   - docker push charlytron/multi-server
   - docker push charlytron/multi-worker
 
-  
-
 deploy:
   provider: elasticbeanstalk
   region: 'us-east-2'
