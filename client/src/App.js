@@ -17,9 +17,9 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Fibonacci Calculator, Version 2.0
           </a>
-          <Link to="/">Home Boy</Link>
+          <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
         <div>
