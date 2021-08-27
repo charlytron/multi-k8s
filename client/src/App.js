@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Fibonacci Calculator, Version Kubernetes
+            Fibonacci Calculator, Version 2.1
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
