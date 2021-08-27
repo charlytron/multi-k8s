@@ -33,10 +33,12 @@
 .Link-a {
   color: lightsalmon;
   text-decoration: none;
+  font-size: calc(5px + 2vmin);
 }
 .Link-b {
   color: #a6f9c7;;
   text-decoration: none;
+  font-size: calc(5px + 2vmin);
 }
 
 @keyframes App-logo-spin {
